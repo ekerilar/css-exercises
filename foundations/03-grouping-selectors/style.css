@@ -1,0 +1,19 @@
+.left,
+.right {
+    border-color: gray;
+    font-size: 28px;
+    font-family: Helvetica, 'Times New Roman', Times, sans-serif
+}
+
+.left {
+    color: white;
+    background-color: black
+
+}
+
+.right {
+    color: black;
+    background-color: yellow
+    
+
+}
