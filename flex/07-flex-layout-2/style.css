@@ -1,29 +1,82 @@
+html {
+  height: 100%;
+  margin: 0;
+}
+
 body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
   min-height: 100vh;
 }
 
+a {
+  text-decoration: none;
+  color: #eee;
+  width: 24px;
+  font-size: 24px;
+
+  
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+
+}
+
 .header {
   height: 72px;
+  font-size: 32px;
+  font-weight: 900;
   background: darkmagenta;
   color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.main {
+  display: flex;
+  flex: 1;
 }
 
 .footer {
   height: 72px;
   background: #eee;
   color: darkmagenta;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 .sidebar {
   width: 300px;
   background: royalblue;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+  flex-shrink: 0;
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  padding: 16px;
+  width: 300px;
+ 
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 48px;
+  gap: 32px;
 }
