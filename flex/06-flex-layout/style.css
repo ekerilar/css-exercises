@@ -11,11 +11,19 @@ img {
   width: 600px;
 }
 
+a {
+  text-decoration: none;
+  color: gray;
+  margin-right: 20px;
+}
+
 button {
   font-family: Roboto, sans-serif;
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 10px;
+  margin-top: 10px;
 }
 
 input {
@@ -23,4 +31,51 @@ input {
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
+}
+
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+  padding: 25% 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header, .footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+
+}
+
+.footer {
+  background-color: #eee;
+}
+
+.right-links, .left-links {
+  gap: 10px;
+  align-items: baseline;
+}
+
+.right-links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.left-links {
+  display: flex;
+  justify-content: flex-start;
+
 }
